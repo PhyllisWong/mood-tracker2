@@ -9,4 +9,5 @@ The app employs the use of delegates, protocols, and segues to pass data between
 
 #### Current MVP uses simple Table Views
 - Future iterations will add the features:
-    -   
+    - Picker View
+    - Colored background
