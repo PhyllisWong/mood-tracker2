@@ -14,6 +14,8 @@
 		B9EC55761F7F5F0F00CB672D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9EC55741F7F5F0F00CB672D /* LaunchScreen.storyboard */; };
 		B9EC55811F7F5F0F00CB672D /* MoodTracker2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EC55801F7F5F0F00CB672D /* MoodTracker2Tests.swift */; };
 		B9EC558C1F7F5F0F00CB672D /* MoodTracker2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EC558B1F7F5F0F00CB672D /* MoodTracker2UITests.swift */; };
+		B9EC559A1F7F6B2700CB672D /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EC55991F7F6B2700CB672D /* FriendsTableViewController.swift */; };
+		B9EC559C1F7F6DFD00CB672D /* MoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EC559B1F7F6DFD00CB672D /* MoodTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		B9EC55871F7F5F0F00CB672D /* MoodTracker2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodTracker2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EC558B1F7F5F0F00CB672D /* MoodTracker2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTracker2UITests.swift; sourceTree = "<group>"; };
 		B9EC558D1F7F5F0F00CB672D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9EC55991F7F6B2700CB672D /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		B9EC559B1F7F6DFD00CB672D /* MoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				B9EC556B1F7F5F0F00CB672D /* AppDelegate.swift */,
 				B9EC556D1F7F5F0F00CB672D /* ViewController.swift */,
 				B9EC556F1F7F5F0F00CB672D /* Main.storyboard */,
+				B9EC55991F7F6B2700CB672D /* FriendsTableViewController.swift */,
+				B9EC559B1F7F6DFD00CB672D /* MoodTableViewController.swift */,
 				B9EC55721F7F5F0F00CB672D /* Assets.xcassets */,
 				B9EC55741F7F5F0F00CB672D /* LaunchScreen.storyboard */,
 				B9EC55771F7F5F0F00CB672D /* Info.plist */,
@@ -261,6 +267,8 @@
 			files = (
 				B9EC556E1F7F5F0F00CB672D /* ViewController.swift in Sources */,
 				B9EC556C1F7F5F0F00CB672D /* AppDelegate.swift in Sources */,
+				B9EC559C1F7F6DFD00CB672D /* MoodTableViewController.swift in Sources */,
+				B9EC559A1F7F6B2700CB672D /* FriendsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
