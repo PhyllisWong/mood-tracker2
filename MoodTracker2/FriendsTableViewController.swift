@@ -34,13 +34,7 @@ class FriendsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-//         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
 
     // MARK: - Table view data source
 
@@ -56,25 +50,47 @@ class FriendsTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "friendsCell", for: indexPath)
 
+        let friend = friends[indexPath.row]
         // Configure the cell...
-        let selectedFriend = friends[indexPath.row]
-        goToMoodTableViewController(selectedFriend: selectedFriend)
+        // let selectedFriend = friends[indexPath.row]
+        
+        cell.textLabel?.text = "\(friend.name) \(friend.mood?.rawValue ?? "")"
 
         return cell
     }
     
-    func goToMoodTableViewController(selectedFriend: Friend) {
+    @IBAction func addPressed(_ sender: Any) {
+        
+        // Add your friend here
+    }
+    
+    // Tableview delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let selectedFriend = friends[indexPath.row]
+        
+        goToMoodChooserViewController(selectedFriend: selectedFriend)
+        
+    }
+    
+    func goToMoodChooserViewController(selectedFriend: Friend) {
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         guard let moodTableViewController = storyboard.instantiateViewController(withIdentifier: "MoodTableViewController") as? MoodTableViewController
             else {return}
         
+        
         moodTableViewController.selectedFriend = selectedFriend
+        
+        // TODO: Make sure to set the delete on the ChooseMoodTableViewController
         
         
         self.navigationController?.pushViewController(moodTableViewController, animated: true)
+        
     }
     
     
